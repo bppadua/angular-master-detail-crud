@@ -47,12 +47,12 @@ export class CategoryService {
 
   delete(id: number): Observable<any>{
     const url = `${this.apiPath}/${id}`;
-
     return this.http.delete(url).pipe(
       catchError(this.handleError),
       map(() => null)
     )
   }
+  
   //PRIVATE METHODS
 
   private jsonDataToCategories(jsonData: any[]): Category[]{
