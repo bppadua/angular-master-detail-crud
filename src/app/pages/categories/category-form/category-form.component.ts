@@ -8,7 +8,6 @@ import { CategoryService } from '../shared/category.service';
 import { switchMap } from 'rxjs/operators';
 
 import toastr from 'toastr';
-import { create } from 'domain';
 
 @Component({
   selector: 'app-category-form',
