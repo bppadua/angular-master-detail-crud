@@ -8,8 +8,6 @@ import { BaseResourceService } from '../../services/base-resource.service';
 import { switchMap } from 'rxjs/operators';
 
 import toastr from 'toastr';
-import { create } from 'domain';
-
 export abstract class BaseResourceFormComponent<T extends BaseResourceModel> implements OnInit, AfterContentChecked {
 
     currentAction: string;
